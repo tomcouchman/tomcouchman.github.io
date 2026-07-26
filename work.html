@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en-GB">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Cybersecurity projects by Tom Couchman, including the HomeSOC Log Analyzer and its transparent detection logic." name="description"/>
+  <meta content="#f6f3ed" name="theme-color"/>
+  <title>
+   Work — Tom Couchman
+  </title>
+  <meta content="Tom Couchman" name="author"/>
+  <meta content="light" name="color-scheme"/>
+  <link href="https://tomcouchman.github.io/work.html" rel="canonical"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Tom Couchman — Cybersecurity Portfolio" property="og:site_name"/>
+  <meta content="en_GB" property="og:locale"/>
+  <meta content="Work — Tom Couchman" property="og:title"/>
+  <meta content="Cybersecurity projects by Tom Couchman, including the HomeSOC Log Analyzer and its transparent detection logic." property="og:description"/>
+  <meta content="https://tomcouchman.github.io/work.html" property="og:url"/>
+  <meta content="https://tomcouchman.github.io/assets/social-preview.png" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="Tom Couchman, aspiring SOC analyst — cybersecurity portfolio" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Work — Tom Couchman" name="twitter:title"/>
+  <meta content="Cybersecurity projects by Tom Couchman, including the HomeSOC Log Analyzer and its transparent detection logic." name="twitter:description"/>
+  <meta content="https://tomcouchman.github.io/assets/social-preview.png" name="twitter:image"/>
+  <meta content="Tom Couchman, aspiring SOC analyst — cybersecurity portfolio" name="twitter:image:alt"/>
+  <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="assets/css/styles.css" rel="stylesheet"/>
+  <script defer="" src="assets/js/main.js">
+  </script>
+ </head>
+ <body class="page-work">
+  <a class="skip-link" href="#content">
+   Skip to content
+  </a>
+  <div aria-hidden="true" class="page-progress">
+   <span data-page-progress="">
+   </span>
+  </div>
+  <nav aria-label="Portfolio navigation" class="edge-nav">
+   <a class="edge-home" href="index.html">
+    <span>
+     00
+    </span>
+    <strong>
+     Home
+    </strong>
+   </a>
+   <a aria-current="page" class="edge-work" href="work.html">
+    <span>
+     01
+    </span>
+    <strong>
+     Work
+    </strong>
+   </a>
+   <a class="edge-profile" href="profile.html">
+    <span>
+     02
+    </span>
+    <strong>
+     Profile
+    </strong>
+   </a>
+   <a class="edge-contact" href="contact.html">
+    <span>
+     03
+    </span>
+    <strong>
+     Contact
+    </strong>
+   </a>
+  </nav>
+  <main id="content">
+   <section class="page-hero">
+    <h1 class="reveal">
+     Work.
+    </h1>
+    <p class="reveal">
+     Small, focused projects that turn security theory into something visible: a problem, a method, an output and an honest account of the limitations.
+    </p>
+   </section>
+   <section class="content-grid">
+    <article class="content-card reveal">
+     <p class="section-tag">
+      Featured / Python
+     </p>
+     <h2>
+      HomeSOC Log Analyzer
+     </h2>
+     <p>
+      A defensive-security utility that reads SSH authentication logs, groups failed-login events by source IP and assigns severity using clear thresholds.
+     </p>
+     <dl class="fact-list">
+      <div>
+       <dt>
+        Problem
+       </dt>
+       <dd>
+        Repeated login failures are difficult to assess quickly in raw logs.
+       </dd>
+      </div>
+      <div>
+       <dt>
+        Method
+       </dt>
+       <dd>
+        Parse events, group by source, count failures and apply explicit rules.
+       </dd>
+      </div>
+      <div>
+       <dt>
+        Output
+       </dt>
+       <dd>
+        A concise severity-based incident summary.
+       </dd>
+      </div>
+      <div>
+       <dt>
+        Demonstrates
+       </dt>
+       <dd>
+        Python, log analysis, detection logic, reporting and Git.
+       </dd>
+      </div>
+     </dl>
+     <div class="hero-actions" style="margin-top:24px">
+      <a class="button primary" href="https://github.com/tomcouchman/homesoc-log-analyzer" rel="noreferrer" target="_blank">
+       Open repository ↗
+      </a>
+      <a class="button ghost" href="index.html#project">
+       Use interactive demo
+      </a>
+     </div>
+    </article>
+    <aside class="content-card reveal">
+     <p class="section-tag">
+      Limitations / honest scope
+     </p>
+     <h3>
+      What it does not claim to be
+     </h3>
+     <p>
+      HomeSOC is a foundation project, not a production SIEM or machine-learning detector. Its value is in showing a transparent workflow and a clear explanation of why an event is classified.
+     </p>
+     <div class="skill-cloud">
+      <span>
+       Explicit rules
+      </span>
+      <span>
+       Readable output
+      </span>
+      <span>
+       Reproducible logic
+      </span>
+      <span>
+       Documented scope
+      </span>
+     </div>
+    </aside>
+    <article class="content-card reveal">
+     <p class="section-tag">
+      Next / planned evidence
+     </p>
+     <h3>
+      Network traffic investigation
+     </h3>
+     <p>
+      A documented Wireshark investigation using filters, packet evidence and a concise analyst conclusion.
+     </p>
+    </article>
+    <article class="content-card reveal">
+     <p class="section-tag">
+      Next / planned evidence
+     </p>
+     <h3>
+      SIEM detection lab
+     </h3>
+     <p>
+      A small monitored environment using Wazuh or Splunk to generate alerts and investigate security events.
+     </p>
+    </article>
+   </section>
+  </main>
+  <footer>
+   <p>
+    ©
+    <span data-current-year="">
+     2026
+    </span>
+    Tom Couchman · Portfolio v0.14
+   </p>
+   <div class="footer-actions">
+    <button aria-pressed="false" data-motion-toggle="" type="button">
+     <span data-motion-label="">
+      Pause motion
+     </span>
+    </button>
+    <button data-open-command="" type="button">
+     Press / for quick navigation
+    </button>
+   </div>
+  </footer>
+  <dialog aria-describedby="command-palette-help" aria-labelledby="command-palette-title" class="command-palette" data-command-dialog="">
+   <form method="dialog">
+    <header>
+     <span id="command-palette-title">
+      Quick navigation
+     </span>
+     <button aria-label="Close" value="close">
+      ×
+     </button>
+    </header>
+    <p class="sr-only" id="command-palette-help">
+     Search or choose a destination. Press Escape to close.
+    </p>
+    <label class="sr-only" for="command-search">
+     Search portfolio destinations
+    </label>
+    <input aria-controls="command-list" autocomplete="off" data-command-search="" id="command-search" placeholder="Type a destination…" type="search"/>
+    <div class="command-list" id="command-list">
+     <a data-command-item="" href="index.html">
+      <span>
+       Home
+      </span>
+      <kbd>
+       H
+      </kbd>
+     </a>
+     <a data-command-item="" href="work.html">
+      <span>
+       Work
+      </span>
+      <kbd>
+       W
+      </kbd>
+     </a>
+     <a data-command-item="" href="profile.html">
+      <span>
+       Profile
+      </span>
+      <kbd>
+       P
+      </kbd>
+     </a>
+     <a data-command-item="" href="contact.html">
+      <span>
+       Contact
+      </span>
+      <kbd>
+       C
+      </kbd>
+     </a>
+    </div>
+   </form>
+  </dialog>
+ </body>
+</html>
+
