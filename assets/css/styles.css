@@ -211,60 +211,111 @@ body.motion-paused *,body.motion-paused *::before,body.motion-paused *::after{an
 .error-grid .content-card{min-height:280px}
 
 @media(max-width:720px){
-  .edge-nav{padding-bottom:env(safe-area-inset-bottom)}
-  .hero{padding-bottom:calc(74px + env(safe-area-inset-bottom))}
-  footer{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
-  .footer-actions{align-items:flex-start;justify-content:flex-start;gap:14px}
+  .edge-nav{
+    padding-bottom:env(safe-area-inset-bottom);
+  }
+
+  .hero{
+    padding-bottom:calc(74px + env(safe-area-inset-bottom));
+  }
+
+  footer{
+    padding-bottom:calc(84px + env(safe-area-inset-bottom));
+  }
+
+  .footer-actions{
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap:14px;
+  }
 
   .table-scroll{
-    margin-inline:-1px;
-    overflow-x:visible;
+    margin-inline:0;
+    overflow:visible;
+    border:0;
+  }
+
+  .ip-table,
+  .ip-table tbody,
+  .ip-table tr,
+  .ip-table td{
+    display:block;
+    width:100%;
   }
 
   .ip-table{
-    width:100%;
     min-width:0;
-    table-layout:fixed;
+    background:transparent;
   }
 
-  .ip-table th,
+  .ip-table thead{
+    display:none;
+  }
+
+  .ip-table tbody{
+    display:grid;
+    gap:12px;
+  }
+
+  .ip-table tbody tr{
+    padding:14px;
+    border:1px solid var(--line);
+    background:#fff;
+  }
+
   .ip-table td{
-    padding:10px 6px;
-    font-size:9px;
-    overflow-wrap:anywhere;
+    display:grid;
+    grid-template-columns:100px minmax(0,1fr);
+    gap:12px;
+    align-items:center;
+    padding:8px 0;
+    border:0;
+    text-align:left !important;
   }
 
-  .ip-table th:nth-child(1),
-  .ip-table td:nth-child(1){
-    width:34%;
+  .ip-table td::before{
+    font:800 8px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
   }
 
-  .ip-table th:nth-child(2),
-  .ip-table td:nth-child(2){
-    width:26%;
+  .ip-table td:nth-child(1)::before{
+    content:"Source IP";
   }
 
-  .ip-table th:nth-child(3),
-  .ip-table td:nth-child(3){
-    width:17%;
+  .ip-table td:nth-child(2)::before{
+    content:"Activity";
   }
 
-  .ip-table th:nth-child(4),
-  .ip-table td:nth-child(4){
-    width:23%;
+  .ip-table td:nth-child(3)::before{
+    content:"Failures";
+  }
+
+  .ip-table td:nth-child(4)::before{
+    content:"Result";
   }
 
   .ip-table code{
-    font-size:9px;
+    font-size:11px;
+    overflow-wrap:anywhere;
+  }
+
+  .ip-table .ip-bar{
+    width:100%;
   }
 
   .severity{
-    padding:7px 3px;
-    font-size:8px;
+    width:max-content;
+    padding:7px 10px;
+    font-size:9px;
   }
 
-  .demo-label{font-size:7px}
+  .demo-label{
+    font-size:7px;
+  }
 }
+
 @media(prefers-reduced-motion:reduce){
   .command-palette[open]{animation:none}
 }
