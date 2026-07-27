@@ -96,7 +96,24 @@ footer{padding:24px 92px 24px 40px;border-top:1px solid var(--ink);display:flex;
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none;transition:none}}
 @media(max-width:720px){
   .hero-copy,.hero-console{min-width:0;width:100%}
-  .name-lockup{display:block;width:100%;max-width:100%;overflow:hidden}
+  .name-lockup{
+  display:block;
+  width:100%;
+  max-width:100%;
+  overflow:visible;
+}
+
+.name-lockup .surname{
+  display:inline-block;
+  width:max-content;
+  max-width:100%;
+}
+
+.name-lockup .surname::after{
+  left:0;
+  right:0;
+  bottom:-.04em;
+}
   .name-lockup h1{font-size:clamp(3.8rem,18.2vw,5.4rem);white-space:nowrap;letter-spacing:-.085em}
   .name-lockup .first{font-size:.34em;white-space:normal}
   .console-top{padding:13px 14px;gap:8px}.console-top p{font-size:9px;white-space:nowrap}.console-top p:last-child{font-size:8px}
