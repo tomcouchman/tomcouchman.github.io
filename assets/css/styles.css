@@ -215,11 +215,56 @@ body.motion-paused *,body.motion-paused *::before,body.motion-paused *::after{an
   .hero{padding-bottom:calc(74px + env(safe-area-inset-bottom))}
   footer{padding-bottom:calc(84px + env(safe-area-inset-bottom))}
   .footer-actions{align-items:flex-start;justify-content:flex-start;gap:14px}
-  .table-scroll{margin-inline:-1px}
-  .ip-table{min-width:560px}
+
+  .table-scroll{
+    margin-inline:-1px;
+    overflow-x:visible;
+  }
+
+  .ip-table{
+    width:100%;
+    min-width:0;
+    table-layout:fixed;
+  }
+
+  .ip-table th,
+  .ip-table td{
+    padding:10px 6px;
+    font-size:9px;
+    overflow-wrap:anywhere;
+  }
+
+  .ip-table th:nth-child(1),
+  .ip-table td:nth-child(1){
+    width:34%;
+  }
+
+  .ip-table th:nth-child(2),
+  .ip-table td:nth-child(2){
+    width:26%;
+  }
+
+  .ip-table th:nth-child(3),
+  .ip-table td:nth-child(3){
+    width:17%;
+  }
+
+  .ip-table th:nth-child(4),
+  .ip-table td:nth-child(4){
+    width:23%;
+  }
+
+  .ip-table code{
+    font-size:9px;
+  }
+
+  .severity{
+    padding:7px 3px;
+    font-size:8px;
+  }
+
   .demo-label{font-size:7px}
 }
-
 @media(prefers-reduced-motion:reduce){
   .command-palette[open]{animation:none}
 }
