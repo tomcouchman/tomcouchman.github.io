@@ -297,8 +297,10 @@ body.motion-paused *,body.motion-paused *::before,body.motion-paused *::after{an
   }
 
   .ip-table code{
+    display:block;
     font-size:11px;
-    overflow-wrap:anywhere;
+    white-space:nowrap;
+    font-variant-numeric:tabular-nums;
   }
 
   .ip-table .ip-bar{
