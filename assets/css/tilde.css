@@ -1,0 +1,166 @@
+/* TILDE_ portfolio extension: scoped to project-specific classes. */
+.tilde-feature{margin:0 92px 90px 40px;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);overflow:hidden;border:1px solid var(--ink);background:var(--paper-2);box-shadow:var(--shadow)}
+.tilde-feature-copy{padding:clamp(26px,4vw,54px)}
+.tilde-feature h2{margin:4px 0 18px;letter-spacing:-.065em;font-size:clamp(3rem,6vw,6.3rem);line-height:.92}
+.tilde-feature-copy>p:not(.section-tag){font-size:1.05rem;line-height:1.7;color:var(--ink-soft);max-width:54ch}
+.tilde-feature .hero-actions{margin-top:25px}
+.tilde-kicker{font:800 11px/1.3 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--tilde-green-dark)}
+.tilde-brandboard{position:relative;min-height:300px;background:radial-gradient(circle at 60% 28%,rgba(31,205,119,.23),transparent 55%),linear-gradient(155deg,#0c1e1b,#050b0b 78%);color:#e8fff6;display:flex;flex-direction:column;justify-content:space-between;padding:36px;overflow:hidden}
+.tilde-brandboard::after{content:"";position:absolute;width:250px;height:250px;right:-130px;bottom:-150px;border:35px solid rgba(31,205,119,.11);border-radius:50%}
+.tilde-brandboard small{position:relative;z-index:1;color:#b5d8d1;font:800 10px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase}
+.tilde-brandmark{position:relative;z-index:1;font-weight:850;letter-spacing:-.07em;font-size:clamp(3.5rem,6vw,6.5rem);line-height:1}
+.tilde-brandmark em{font-style:normal;color:var(--tilde-green)}
+.tilde-brandboard p{position:relative;z-index:1;margin:0;color:#c8e7dc;font-size:1rem;line-height:1.5;max-width:26ch}
+.tilde-points{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
+.tilde-points span{font:800 10px/1.3 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase;border:1px solid var(--line);padding:8px 10px}
+.tilde-work-card{grid-column:1/-1;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:0;padding:0;overflow:hidden}
+.tilde-work-card .tilde-work-copy{padding:30px}
+.tilde-work-card h2{margin:0 0 12px}
+.tilde-work-card .tilde-brandboard{min-height:290px}
+.tilde-work-card .hero-actions{margin-top:22px}
+.tilde-case-hero{--page-accent:rgba(31,205,119,.36)}
+.tilde-case-hero h1{font-size:clamp(4.8rem,12vw,11rem)}
+.tilde-case-content{padding:25px 92px 95px 40px}
+.tilde-case-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(290px,.7fr);border:1px solid var(--line);background:var(--paper-2)}
+.tilde-case-intro .tilde-intro-text{padding:clamp(26px,4vw,55px)}
+.tilde-case-intro h2{margin:10px 0 20px;font-size:clamp(2.6rem,5.5vw,5.5rem);line-height:.95;letter-spacing:-.06em}
+.tilde-case-intro p{font-size:1.04rem;line-height:1.7;color:var(--ink-soft)}
+.tilde-case-intro .tilde-brandboard{min-height:350px}
+.tilde-case-section{margin-top:55px}
+.tilde-case-section>h2{font-size:clamp(2.3rem,4.8vw,4.7rem);line-height:1.02;letter-spacing:-.05em;margin:0 0 24px}
+.tilde-case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+.tilde-case-grid article{padding:26px;border:1px solid var(--line);background:var(--paper-2)}
+.tilde-case-grid h3{font-size:1.3rem;letter-spacing:-.03em;margin:2px 0 8px}
+.tilde-case-grid p{margin:0;color:var(--ink-soft);line-height:1.7}
+.tilde-case-grid .tilde-number{font:800 11px/1 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--blue)}
+.tilde-case-callout{margin-top:55px;display:grid;grid-template-columns:1fr 1fr;gap:28px;background:var(--ink);color:#fff;padding:clamp(24px,4vw,45px)}
+.tilde-case-callout h2{margin:0;font-size:clamp(2.1rem,3.7vw,3.9rem);letter-spacing:-.05em;line-height:1.05}
+.tilde-case-callout p{color:#d7dcea;line-height:1.72;margin:0}
+.tilde-case-footer{margin-top:40px;display:flex;gap:12px;flex-wrap:wrap}
+.tilde-case-footer .button.ghost{background:transparent}
+@media(max-width:1000px){.tilde-feature{margin-right:82px}.tilde-case-content{padding-right:82px}}
+@media(max-width:720px){.tilde-feature{grid-template-columns:1fr;margin:0 18px 78px}.tilde-feature-copy{padding:24px}.tilde-brandboard{min-height:230px;padding:25px}.tilde-work-card{grid-template-columns:1fr}.tilde-work-card .tilde-work-copy{padding:22px}.tilde-case-content{padding:24px 18px 85px}.tilde-case-intro,.tilde-case-callout,.tilde-case-grid{grid-template-columns:1fr}.tilde-case-intro .tilde-intro-text{padding:24px}.tilde-case-intro .tilde-brandboard{min-height:250px}.tilde-case-section{margin-top:43px}.tilde-case-grid article{padding:21px}.tilde-case-callout{padding:25px}}
+
+
+/* Play Store release: editorial feature, sized for mobile and desktop */
+.tilde-release-status{display:inline-flex;align-items:center;gap:8px;font:800 11px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.08em;text-transform:uppercase;color:#125e3c;background:#e3f9ed;border:1px solid #a6d8be;padding:10px 12px;margin:2px 0 16px}
+.tilde-release-status::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--tilde-green-dark);box-shadow:0 0 0 4px rgba(31,205,119,.13)}
+.tilde-store-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:20px 0 10px}
+.tilde-store-actions .button{min-height:49px}
+.tilde-store-actions .button.primary{background:#132720;color:#fff;border-color:#132720}
+.tilde-store-actions .button.primary:hover{background:#156b49;border-color:#156b49}
+.tilde-store-note{font-size:12px!important;line-height:1.5!important;margin:0 0 16px!important;color:#596373!important}
+.tilde-release-panel{margin-top:50px;border:1px solid #173a36;background:linear-gradient(130deg,#091a19,#103028 78%);color:#eefcf8;padding:clamp(22px,4vw,44px);display:grid;grid-template-columns:minmax(0,1.1fr) minmax(200px,.7fr);gap:28px;align-items:center}
+.tilde-release-panel .section-tag{color:var(--tilde-green)}
+.tilde-release-panel h2{font-size:clamp(2.3rem,4.4vw,4.3rem);letter-spacing:-.06em;line-height:1;margin:0 0 17px}
+.tilde-release-panel p{color:#c0dad2;line-height:1.7;margin:0 0 14px;max-width:60ch}
+.tilde-release-panel .button{background:var(--tilde-green);color:#081b13;border-color:var(--tilde-green)}
+.tilde-release-panel .button:hover{background:#c9ffe8;border-color:#c9ffe8}
+.tilde-proof{padding:20px;border:1px solid rgba(183,244,220,.28);background:rgba(255,255,255,.04)}
+.tilde-proof .tilde-brandmark{font-size:clamp(3.4rem,5vw,5.9rem);color:#f4fff9;margin-bottom:12px}
+.tilde-proof p{margin:0}
+.tilde-proof small{display:block;color:#a4dcc8;font:800 10px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.11em;text-transform:uppercase;margin-bottom:24px}
+.tilde-release-meta{font:800 10px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;color:#ace1ce;margin-top:20px}
+@media(max-width:720px){.tilde-release-panel{grid-template-columns:1fr;gap:16px;padding:24px}.tilde-proof{padding:18px}.tilde-store-actions{display:grid;grid-template-columns:1fr}.tilde-store-actions .button{justify-content:center}}
+
+/* Clarifies AI-assisted implementation and personal responsibility. */
+.tilde-attribution{margin:20px 0 22px;padding:18px 20px;border-left:5px solid var(--tilde-green-dark);background:#edf8f2;color:#193a31}
+.tilde-attribution strong{display:block;font-size:14px;margin-bottom:8px}
+.tilde-attribution p{margin:0!important;color:#2c4c42!important;font-size:14px;line-height:1.65!important}
+.tilde-tech-context{max-width:850px;line-height:1.7;color:#414858;background:#fff;border:1px solid var(--line);padding:18px 20px;margin:0 0 22px}
+.tilde-tech-context strong{color:var(--ink)}
+@media(max-width:720px){.tilde-attribution,.tilde-tech-context{padding:16px}}
+
+
+/* TILDE_ brand refresh (Google Play icon and its vivid green wave). */
+:root{--tilde-green:#1fcd77;--tilde-green-dark:#087b48;--tilde-night:#080c0a}
+.tilde-main-title{white-space:nowrap}
+.tilde-hero-lockup{display:flex;align-items:center;gap:clamp(12px,2.4vw,32px);min-width:0;position:relative;z-index:1}
+.tilde-case-hero .tilde-main-title{font-size:clamp(4.2rem,10vw,10.4rem);letter-spacing:-.082em;line-height:.95}
+.tilde-case-hero .tilde-underscore,.tilde-feature .tilde-underscore{color:var(--tilde-green-dark)}
+.tilde-hero-icon-link{display:inline-flex;flex:none;align-items:center;justify-content:center;border-radius:22%;box-shadow:0 13px 32px rgba(4,40,24,.21);transition:transform .2s ease}
+.tilde-hero-icon-link:hover{transform:translateY(-3px)}
+.tilde-app-icon{display:block;width:92px;height:92px;flex:none;border-radius:22%;background:#060b0a;color:#fff;position:relative;overflow:hidden}
+.tilde-app-icon svg{display:block;width:100%;height:100%}
+.tilde-app-icon::after{content:"";position:absolute;inset:0;background:url("../images/tilde-app-icon.png") center/cover no-repeat;pointer-events:none}
+.tilde-hero-icon{width:clamp(70px,7vw,110px);height:clamp(70px,7vw,110px)}
+.tilde-brand-identity{display:flex;align-items:center;gap:clamp(13px,2.1vw,24px);min-width:0;position:relative;z-index:1}
+.tilde-brand-icon{width:clamp(68px,7vw,92px);height:clamp(68px,7vw,92px);box-shadow:0 12px 42px rgba(0,0,0,.2)}
+.tilde-brand-identity .tilde-brandmark{font-size:clamp(2.9rem,5.1vw,5.1rem);min-width:0;white-space:nowrap;line-height:1.04}
+.tilde-brandboard{background:radial-gradient(circle at 67% 37%,rgba(31,205,119,.23),transparent 61%),linear-gradient(155deg,#0c1e1b,#050b0b 78%)}
+.tilde-brandboard .tilde-brandmark,.tilde-proof .tilde-brandmark{color:#f2fff8}
+.tilde-brandboard small,.tilde-proof small{color:#a6cfbb}
+.tilde-case-hero::after{background:radial-gradient(circle at 50% 50%,rgba(31,205,119,.45),rgba(31,205,119,.1) 58%,transparent 70%)}
+.tilde-case-content .section-tag,.tilde-case-grid .tilde-number{color:var(--tilde-green-dark)}
+.tilde-release-panel .section-tag{color:var(--tilde-green)}
+.tilde-release-panel .tilde-brandmark em{color:var(--tilde-green)}
+.tilde-release-panel .tilde-proof .tilde-brand-identity{gap:14px}
+.tilde-release-panel .tilde-brand-icon{width:74px;height:74px}
+.tilde-release-panel .tilde-proof .tilde-brandmark{font-size:clamp(2.6rem,4vw,4.3rem);margin-bottom:0}
+.tilde-feature .tilde-feature-copy .section-tag,.tilde-work-card .section-tag{color:var(--tilde-green-dark)}
+.tilde-feature .tilde-name{white-space:nowrap}
+.tilde-attribution{background:#eaf8ef}
+@media(max-width:1000px){.tilde-case-hero .tilde-main-title{font-size:clamp(4rem,10vw,8rem)}}
+@media(max-width:720px){
+  .tilde-case-hero .tilde-main-title{font-size:clamp(3rem,15vw,5.6rem)}
+  .tilde-hero-icon{width:clamp(56px,17vw,76px);height:clamp(56px,17vw,76px)}
+  .tilde-hero-lockup{gap:12px}
+  .tilde-brand-identity .tilde-brandmark{font-size:clamp(2.7rem,10vw,4.8rem)}
+  .tilde-brand-icon{width:clamp(60px,18vw,78px);height:clamp(60px,18vw,78px)}
+  .tilde-proof .tilde-brand-identity .tilde-brandmark{font-size:clamp(2.2rem,9vw,3.7rem)}
+  .tilde-release-panel .tilde-brand-icon{width:60px;height:60px}
+}
+@media(max-width:360px){
+  .tilde-case-hero .tilde-main-title{font-size:clamp(2.8rem,14.6vw,3.7rem)}
+  .tilde-hero-icon{width:54px;height:54px}
+  .tilde-brand-identity .tilde-brandmark{font-size:2.6rem}
+  .tilde-brand-icon{width:60px;height:60px}
+}
+@media(prefers-reduced-motion:reduce){.tilde-hero-icon-link{transition:none}}
+
+
+/* Hero lockup precision — match the Play icon, align by visible cap height. */
+.tilde-case-hero .tilde-main-title{color:#080c0a;letter-spacing:-.08em}
+.tilde-case-hero .tilde-main-title .tilde-underscore,
+.tilde-feature .tilde-underscore{color:var(--tilde-green)}
+.tilde-hero-lockup{align-items:center;column-gap:clamp(12px,2vw,25px)}
+.tilde-hero-icon-link{translate:0 clamp(10px,1.05vw,16px);box-shadow:0 12px 28px rgba(8,12,10,.16)}
+.tilde-hero-icon-link:hover{transform:translateY(-3px)}
+.tilde-hero-icon{background:#080c0a}
+@media(max-width:720px){
+  .tilde-hero-icon-link{translate:0 7px}
+  .tilde-hero-lockup{column-gap:clamp(9px,2.6vw,14px)}
+}
+@media(max-width:360px){.tilde-hero-icon-link{translate:0 5px}}
+
+
+/* Balanced case-study composition: one hero logo, useful visuals elsewhere. */
+.tilde-concept-core{width:100%;align-self:center}
+/* TILDE_ concept panel: night-mode treatment matching the app identity. */
+.tilde-concept-panel{position:relative;overflow:hidden;min-height:430px;background:radial-gradient(ellipse at 95% 0%,rgba(31,205,119,.16),transparent 54%),linear-gradient(145deg,#081b19 0%,#0c2b27 60%,#113d33 100%);border-left:1px solid #245247;display:grid;grid-template-rows:auto minmax(0,1fr) auto;row-gap:18px;padding:clamp(25px,3.4vw,42px);color:#edfdf6}
+.tilde-concept-panel:after{content:"";position:absolute;width:280px;height:280px;border:1px solid rgba(79,231,157,.19);border-radius:50%;right:-145px;top:-125px;box-shadow:0 0 0 33px rgba(64,214,141,.055),0 0 0 70px rgba(49,182,118,.035);pointer-events:none}
+.tilde-concept-panel small,.tilde-publication small{display:block;position:relative;z-index:1;font:800 10px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;text-transform:uppercase;letter-spacing:.14em}
+.tilde-concept-panel small{color:#8fe1bd}
+.tilde-concept-headline{position:relative;z-index:1;margin:30px 0 27px;font-size:clamp(2.5rem,4.3vw,4.8rem);font-weight:850;line-height:.99;letter-spacing:-.07em;color:#f1fff8}
+.tilde-concept-headline span{color:#62e6a1}
+.tilde-concept-headline em{font-style:normal;color:#1fcd77}
+.tilde-concept-flow{position:relative;z-index:1;display:grid;gap:0;background:rgba(4,25,22,.55);border:1px solid rgba(132,218,179,.25)}
+.tilde-concept-flow>div{display:grid;grid-template-columns:26px minmax(0,1fr);gap:2px 12px;align-items:start;padding:13px 15px;border-bottom:1px solid rgba(132,218,179,.16)}
+.tilde-concept-flow>div:last-child{border-bottom:0}
+.tilde-flow-index{grid-row:span 2;font:800 10px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace;color:#69ebaa}
+.tilde-concept-flow strong{font-size:14px;line-height:1.2;color:#effff7}
+.tilde-concept-flow div>span:last-child{font-size:12px;color:#b3d8c8;line-height:1.4}
+.tilde-concept-panel>p{position:relative;z-index:1;color:#b8e7ce!important;margin:0!important;padding-top:0!important;font-size:13px!important;font-weight:700;line-height:1.45!important}
+.tilde-publication{padding:clamp(22px,2.7vw,34px);border:1px solid rgba(183,244,220,.22);background:rgba(255,255,255,.045)}
+.tilde-publication small{color:#a4dcc8}
+.tilde-publication-main{display:flex;align-items:center;gap:14px;padding:25px 0 20px;border-bottom:1px solid rgba(183,244,220,.22)}
+.tilde-publication-check{width:48px;height:48px;display:grid;place-items:center;flex:none;border-radius:50%;background:#1fcd77;color:#061510;font-size:26px;font-weight:900}
+.tilde-publication-main strong{display:block;font-size:clamp(1.8rem,2.2vw,2.5rem);line-height:1.1;letter-spacing:-.055em;color:#f1fff7}
+.tilde-publication-main div>span{display:block;margin-top:6px;font-size:12px;color:#b4d8cb}
+.tilde-publication dl{margin:0}
+.tilde-publication dl>div{display:flex;justify-content:space-between;gap:12px;align-items:baseline;padding:13px 0;border-bottom:1px solid rgba(183,244,220,.13)}
+.tilde-publication dl>div:last-child{border:0}
+.tilde-publication dt{font:700 10px/1.4 ui-monospace,SFMono-Regular,Consolas,monospace;color:#99b9ae;text-transform:uppercase}
+.tilde-publication dd{margin:0;color:#e7fbf3;font-size:13px;font-weight:700;text-align:right;line-height:1.4}
+@media(max-width:1000px){.tilde-concept-panel{min-height:390px}}
+@media(max-width:720px){.tilde-concept-panel{min-height:330px;border-left:0;border-top:1px solid #245247;padding:26px}.tilde-concept-headline{margin:18px 0 22px}.tilde-publication{padding:22px}.tilde-publication-main{padding:19px 0 16px}}
