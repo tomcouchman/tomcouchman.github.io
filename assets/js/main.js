@@ -124,11 +124,11 @@
     if (command === 'help') {
       addConsoleLine('commands', { text: 'whoami / work / status / contact' });
     } else if (command === 'whoami') {
-      addConsoleLine('profile', { text: 'Tom Couchman · aspiring SOC analyst' });
+      addConsoleLine('profile', { text: 'Tom Couchman · Security+ certified SOC candidate' });
     } else if (command === 'work') {
       addConsoleLine('project', { text: 'HomeSOC Log Analyzer →', href: 'work.html' });
     } else if (command === 'status') {
-      addConsoleLine('status', { text: 'Security+ study active', pulse: true });
+      addConsoleLine('status', { text: 'Security+ certified · November 2026', pulse: true });
     } else if (command === 'contact') {
       addConsoleLine('email', { text: 'thomas.couchman@proton.me', href: 'mailto:thomas.couchman@proton.me' });
     } else {
