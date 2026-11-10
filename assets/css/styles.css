@@ -345,3 +345,7 @@ body.motion-paused *,body.motion-paused *::before,body.motion-paused *::after{an
 .credential-mark img{display:block;width:32px;height:32px;object-fit:contain}
 .credential-mark:hover{opacity:.8;transform:translateY(-1px)}
 .credential-mark:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+
+/* Keep the month/year and its 32px credential icon together when text wraps. */
+.credential-date{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;vertical-align:middle}
+.credential-date .credential-mark,.credential-date .credential-mark img{width:32px;height:32px;min-width:32px;max-width:32px}
