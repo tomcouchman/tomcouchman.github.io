@@ -338,3 +338,9 @@ body.motion-paused *,body.motion-paused *::before,body.motion-paused *::after{an
 @media(prefers-reduced-motion:reduce){
   .command-palette[open]{animation:none}
 }
+
+/* Compact, accessible credential link on the profile page. */
+.credential-link{display:inline-flex;align-items:center;gap:11px;width:max-content;max-width:100%;margin-top:12px;padding:6px 12px 6px 6px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:12px;font-weight:700;line-height:1.4;text-decoration:none;transition:background .2s,border-color .2s}
+.credential-link img{display:block;width:64px;height:64px;flex:0 0 64px;object-fit:contain}
+.credential-link:hover{background:var(--mint);border-color:var(--ink)}
+.credential-link:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
