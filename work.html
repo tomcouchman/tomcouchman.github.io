@@ -3,7 +3,7 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <meta content="Cybersecurity projects by Tom Couchman, including the HomeSOC Log Analyzer and its transparent detection logic." name="description"/>
+  <meta content="Security-minded projects and case studies by Tom Couchman, including the released TILDE_ Wi-Fi companion and foundational learning exercises." name="description"/>
   <meta content="#f6f3ed" name="theme-color"/>
   <title>
    Work — Tom Couchman
@@ -15,7 +15,7 @@
   <meta content="Tom Couchman — Cybersecurity Portfolio" property="og:site_name"/>
   <meta content="en_GB" property="og:locale"/>
   <meta content="Work — Tom Couchman" property="og:title"/>
-  <meta content="Cybersecurity projects by Tom Couchman, including the HomeSOC Log Analyzer and its transparent detection logic." property="og:description"/>
+  <meta content="Security-minded projects and case studies by Tom Couchman, including the released TILDE_ Wi-Fi companion and foundational learning exercises." property="og:description"/>
   <meta content="https://tomcouchman.github.io/work.html" property="og:url"/>
   <meta content="https://tomcouchman.github.io/assets/social-preview.png" property="og:image"/>
   <meta content="1200" property="og:image:width"/>
@@ -23,11 +23,11 @@
   <meta content="Tom Couchman, aspiring SOC analyst — cybersecurity portfolio" property="og:image:alt"/>
   <meta content="summary_large_image" name="twitter:card"/>
   <meta content="Work — Tom Couchman" name="twitter:title"/>
-  <meta content="Cybersecurity projects by Tom Couchman, including the HomeSOC Log Analyzer and its transparent detection logic." name="twitter:description"/>
+  <meta content="Security-minded projects and case studies by Tom Couchman, including the released TILDE_ Wi-Fi companion and foundational learning exercises." name="twitter:description"/>
   <meta content="https://tomcouchman.github.io/assets/social-preview.png" name="twitter:image"/>
   <meta content="Tom Couchman, aspiring SOC analyst — cybersecurity portfolio" name="twitter:image:alt"/>
   <link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-  <link href="assets/css/styles.css" rel="stylesheet"/>
+  <link href="assets/css/styles.css?v=0.15" rel="stylesheet"/>
   <link href="assets/css/tilde.css" rel="stylesheet"/>
   <script defer="" src="assets/js/main.js">
   </script>
@@ -80,88 +80,10 @@
      Work.
     </h1>
     <p class="reveal">
-     Small, focused projects that turn security theory into something visible: a problem, a method, an output and an honest account of the limitations.
+     Selected work, the decisions behind it, and the limitations of what I can currently demonstrate. I am building practical SOC investigation skills alongside my job search.
     </p>
    </section>
    <section class="content-grid">
-    <article class="content-card reveal">
-     <p class="section-tag">
-      Featured / Python
-     </p>
-     <h2>
-      HomeSOC Log Analyzer
-     </h2>
-     <p>
-      A defensive-security utility that reads SSH authentication logs, groups failed-login events by source IP and assigns severity using clear thresholds.
-     </p>
-     <dl class="fact-list">
-      <div>
-       <dt>
-        Problem
-       </dt>
-       <dd>
-        Repeated login failures are difficult to assess quickly in raw logs.
-       </dd>
-      </div>
-      <div>
-       <dt>
-        Method
-       </dt>
-       <dd>
-        Parse events, group by source, count failures and apply explicit rules.
-       </dd>
-      </div>
-      <div>
-       <dt>
-        Output
-       </dt>
-       <dd>
-        A concise severity-based incident summary.
-       </dd>
-      </div>
-      <div>
-       <dt>
-        Demonstrates
-       </dt>
-       <dd>
-        Python, log analysis, detection logic, reporting and Git.
-       </dd>
-      </div>
-     </dl>
-     <div class="hero-actions" style="margin-top:24px">
-      <a class="button primary" href="https://github.com/tomcouchman/homesoc-log-analyzer" rel="noreferrer" target="_blank">
-       Open repository ↗
-      </a>
-      <a class="button ghost" href="index.html#project">
-       Use interactive demo
-      </a>
-     </div>
-    </article>
-    <aside class="content-card reveal">
-     <p class="section-tag">
-      Limitations / honest scope
-     </p>
-     <h3>
-      What it does not claim to be
-     </h3>
-     <p>
-      HomeSOC is a foundation project, not a production SIEM or machine-learning detector. Its value is in showing a transparent workflow and a clear explanation of why an event is classified.
-     </p>
-     <div class="skill-cloud">
-      <span>
-       Explicit rules
-      </span>
-      <span>
-       Readable output
-      </span>
-      <span>
-       Reproducible logic
-      </span>
-      <span>
-       Documented scope
-      </span>
-     </div>
-    </aside>
     <article class="content-card reveal tilde-work-card" aria-labelledby="tilde-work-title">
      <div class="tilde-work-copy">
       <p class="section-tag">Featured / Android &amp; Networking</p>
@@ -179,28 +101,20 @@
      <div class="tilde-brandboard" aria-label="TILDE_ app icon and wordmark"><small>Project 002 / Android app</small><div class="tilde-brand-identity"><span class="tilde-app-icon tilde-brand-icon" role="img" aria-label="TILDE_ app icon, green wave on dark background"><svg viewBox="0 0 240 240" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><path d="M64 132 C79 94 97 89 119 109 C145 131 170 143 183 111" fill="none" stroke="#1fcd77" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div class="tilde-brandmark">TILDE<em>_</em></div></div><p>Quietly watching your connection.</p></div>
     </article>
     <article class="content-card reveal">
-     <p class="section-tag">
-      Next / planned evidence
-     </p>
-     <h3>
-      Network traffic investigation
-     </h3>
-     <p>
-      A documented Wireshark investigation using filters, packet evidence and a concise analyst conclusion.
-     </p>
+      <p class="section-tag">Earlier learning / Python</p>
+      <h2>HomeSOC Log Analyzer</h2>
+      <p>A small foundation exercise using sample SSH authentication logs to group failed-password events by source IP and flag repeated activity with simple, educational thresholds.</p>
+      <p>Kept here as an early learning milestone, not a production detector or a claim of SOC experience.</p>
+      <div class="hero-actions" style="margin-top:24px">
+       <a class="button ghost" href="https://github.com/tomcouchman/homesoc-log-analyzer" target="_blank" rel="noopener noreferrer">View GitHub exercise ↗</a>
+      </div>
     </article>
     <article class="content-card reveal">
-     <p class="section-tag">
-      Next / planned evidence
-     </p>
-     <h3>
-      SIEM detection lab
-     </h3>
-     <p>
-      A small monitored environment using Wazuh or Splunk to generate alerts and investigate security events.
-     </p>
+      <p class="section-tag">Next / planned investigation</p>
+      <h2>SOC Investigation Case Study</h2>
+      <p>A guided SIEM investigation with documented queries, supporting evidence, a reasoned verdict and an incident report. This will be published only after the investigation is completed.</p>
     </article>
-   </section>
+    </section>
   </main>
   <footer>
    <p>
