@@ -352,3 +352,11 @@ body.motion-paused *,body.motion-paused *::before,body.motion-paused *::after{an
 
 /* Keep the Google credential logo immediately beside the final word. */
 .credential-tail{display:inline-flex;align-items:center;gap:7px;white-space:nowrap;vertical-align:middle}
+
+/* Compact foundation exercise secondary to the published TILDE_ case study. */
+.foundation-mini{margin:0 92px 90px 40px;padding:24px 30px;display:flex;align-items:center;justify-content:space-between;gap:34px;border:1px solid var(--line);background:var(--paper-2)}
+.foundation-mini h2{margin:4px 0 8px;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.1;letter-spacing:-.04em}
+.foundation-mini p:not(.section-tag){margin:0;max-width:74ch;font-size:.94rem;line-height:1.55;color:var(--ink-soft)}
+.foundation-mini .button{flex-shrink:0}
+@media(max-width:900px){.foundation-mini{margin:0 82px 70px 40px;display:block}.foundation-mini .button{margin-top:20px}}
+@media(max-width:620px){.foundation-mini{margin:0 18px 65px;padding:22px 18px}}
